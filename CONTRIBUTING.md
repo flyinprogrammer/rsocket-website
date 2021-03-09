@@ -58,7 +58,6 @@ From within the root directory, you can run the following command:
 
 ```shell script
 npx cross-env \
-  CURRENT_BRANCH=":OUR_BRANCH_NAME" \
   ORGANIZATION_NAME="YOUR_GITHUB_USERNAME" \
   PROJECT_NAME="YOUR_REPOSITORY_FORK_NAME" \
   DEPLOY_URL="https://YOUR_GITHUB_USERNAME.github.io/" \
@@ -67,8 +66,8 @@ npx cross-env \
   npm run deploy
 ```
 
-In a lot of cases `CURRENT_BRANCH` likely isn't necessary, and `ORGANIZATION_NAME` and `GIT_USER` will be the same
-value: your GitHub username, and similarly, `PROJECT_NAME` and `PROJECT_BASE_URL` will be the same: `rsocket-website`.
+In a lot of cases `ORGANIZATION_NAME` and `GIT_USER` will be the same value: your GitHub username, and similarly,
+`PROJECT_NAME` and `PROJECT_BASE_URL` will be the same: `rsocket-website`.
 
 These environment variables come from
 [Docusaurus v2 deployment guide](https://v2.docusaurus.io/docs/deployment/), or can be found as shims inside
